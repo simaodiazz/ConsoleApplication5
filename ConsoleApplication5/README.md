@@ -1,62 +1,49 @@
-# Exercicio 1
+# Exercicio 1a
 
 ```csharp
 var array = new int[5];
 ```
 
-# Exercicio 2
+# Exercicio 1b
 
 ```csharp
 var array = new int[5];
 array[0] = 199;
 ```
 
-# Exercicio 3
+# Exercicio 1c
 
 ```csharp
 var array = new int[5];
 array[array.Length - 1] = 250;
 ```
 
-# Exercicio 4
-
-```csharp
-var array = { 1, 2, 3, 4, 5}
-```
-
-# Exercicio 5
+# Exercicio 1d
 ```csharp
 var array = new[]{ 1, 2, 3, 4, 5 };
 Console.WriteLine("O valor da segunda posição é {0}", array[2]);
 ```
 
-# Exercicio 6
+# Exercicio 1e
 
 ```csharp
 var array = new[]{ 1, 2, 3, 4, 5 };
 Console.WriteLine("O valor da segunda posição é {0}", array[array.Length - 1]);
 ```
 
-# Exercicio 7
+# Exercicio 1f
 
 ```csharp
 var array = new char[] { 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j' };
 ```
 
-# Exercicio 8
+# Exercicio 1g
 
 ```csharp
 var array = new int[] { 1, 2, 3, 4 };
 ```
 
-# Exercicio 9
-
-```csharp
-var array = new int[] { 1, 4, 7, 12, 9, 2, 5, 16, 99, 2 };
-foreach (var i in array) Console.Write(i + " ");
-```
-
-# Exercicio 10
+# Exercicio 2
 
 ```csharp
 var array = new int[5];
@@ -71,7 +58,7 @@ Console.WriteLine("Array final: ");
 foreach (var value in array) Console.Write(value + " ");
 ```
 
-# Exercicio 11
+# Exercicio 3
 
 ```csharp
 var array = new int[5];
@@ -85,7 +72,7 @@ for (var i = 1; i <= 5; i++)
 Console.WriteLine("Array final: {0}", string.Join(", ", array));
 ```
 
-# Exercicio 12
+# Exercicio 4
 
 ```csharp
 var array = new int[5];
@@ -99,7 +86,7 @@ for (var i = 1; i <= 5; i++)
 Console.WriteLine("Array final: {0}", string.Join(", ", array.Reverse()));
 ```
 
-# Exercicio 13
+# Exercicio 5
 
 ```csharp
 var array = new int[5];
@@ -143,7 +130,7 @@ while (true)
 }
 ```
 
-# Exercicio 14
+# Exercicio 6
 
 ```csharp
 var array = new int[10];
@@ -169,12 +156,17 @@ while (true)
     {
         Console.WriteLine("Bye!");
     }
+    
+    if (value < 1 && value > 20) {
+        Console.WriteLine("Só pode escrever um número entre 1 e 20");
+        continue;
+    }
                 
     Console.WriteLine(array.Contains(value) ? "O valor {0} existe na array na posição {1}" : "O valor {0} não existe na array na posição {1}", value, );
 }
 ```
 
-# Exercicio 15
+# Exercicio 7
 ```csharp
 var array = new int[10];
 var random = new Random();
@@ -206,7 +198,7 @@ while (true)
 }
 ```
 
-# Exercicio 16
+# Exercicio 8
 
 ```csharp
 var array = new int[10];
@@ -239,7 +231,7 @@ while (true)
 
 ```
 
-# Exercicio 17
+# Exercicio 9
 
 ```csharp
 var array = new int[10];
@@ -254,7 +246,7 @@ var avarage = array.Sum() / array.Length;
 Console.WriteLine("Média de todos os elementos é {0}", avarage);
 ```
 
-# Exercicio 18
+# Exercicio 10
 
 ```csharp
 var array = new int[10];
@@ -272,7 +264,7 @@ Console.WriteLine("Média de todos os elementos é {0}", avarage);
 Console.WriteLine("Array final: {0}", string.Join(", ", array));
 ```
 
-# Exercicio 19
+# Exercicio 11
 
 ```csharp
 Console.Write("Quantos números quer gerar: ");
@@ -295,7 +287,7 @@ for (var i = 1; i < 6; i++)
 }
 ```
 
-# Exercicio 20
+# Exercicio 12
 
 ```csharp
 // Array Bidimensional
@@ -325,7 +317,7 @@ for (int i = 0; i < 12; i++)
 
 ```
 
-# Exercicio 21
+# Exercicio 13
 
 ```csharp
 var numbers = new int[5];
@@ -347,7 +339,7 @@ Console.WriteLine("Os números sorteados são {0}", string.Join(", ", numbers));
 Console.WriteLine("As estrelas sorteadas são {0}", string.Join(", ", stars));
 ```
 
-# Exercicio 22
+# Exercicio 14
 
 ```csharp
 var kg = new int[] { 45, 51, 49, 64, 78, 59 };
@@ -355,7 +347,7 @@ Console.WriteLine("A soma de todos os elementos do vetor kg é {0}", kg.Sum());
 Console.WriteLine("A média de kg dos valores registados no vetor é {0}", kg.Sum() / kg.Length);
 ```
 
-# Exercicio 23
+# Exercicio 15
 
 ```csharp
 var array = new int[4];
@@ -372,7 +364,7 @@ Console.WriteLine("O valor mais alto da array é {0}", array.Max());
 Console.WriteLine("O valor mais baixo da array é {0}", array.Min());
 ```
 
-# Exercicio 24
+# Exercicio 16
 
 ```csharp
 Console.Write("Quantos valores você vai adicionar: ");
