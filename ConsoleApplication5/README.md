@@ -298,16 +298,31 @@ for (var i = 1; i < 6; i++)
 # Exercicio 20
 
 ```csharp
-var keys = new string[] { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro" };
-var value = new int[]{ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
-
-for (var i = 0; i < 12; i++)
+// Array Bidimensional
+string[,] months = new string[,]
 {
-    if (value[i] == 30)
+    { "Janeiro", "31" },
+    { "Fevereiro", "28" },
+    { "Março", "31" },
+    { "Abril", "30" },
+    { "Maio", "31" },
+    { "Junho", "30" },
+    { "Julho", "31" },
+    { "Agosto", "31" },
+    { "Setembro", "30" },
+    { "Outubro", "31" },
+    { "Novembro", "30" },
+    { "Dezembro", "31" }
+};
+
+for (int i = 0; i < 12; i++)
+{
+    if (months[i, 1] == "30")
     {
-        Console.WriteLine("O mês {0} têm 30 dias", keys[i]);
+        Console.WriteLine("O mês {0} tem 30 dias", months[i, 0]);
     }
 }
+
 ```
 
 # Exercicio 21
